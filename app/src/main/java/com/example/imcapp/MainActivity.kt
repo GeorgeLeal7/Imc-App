@@ -1,7 +1,9 @@
 package com.example.imcapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,6 +12,13 @@ class MainActivity : AppCompatActivity() {
 
         //!! se chama double-bang
         supportActionBar!!.hide()
+
+        val buttonEntrar = findViewById<Button>(R.id.button_entrar)
+
+        buttonEntrar.setOnClickListener {
+            val abrirDashboard = Intent(this, DashBoardActivity::class.java)
+            startActivity(abrirDashboard)
+        }
 
     }
 }
