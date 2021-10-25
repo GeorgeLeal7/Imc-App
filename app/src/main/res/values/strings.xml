@@ -10,5 +10,28 @@
     <string name="login_esqueci">Esqueci a senha</string>
     <string name="login_nao_tem_conta">Não tem uma conta?</string>
     <string name="login_criar_conta">Criar uma conta agora</string>
+    <string name="cadastro_nome">Nome</string>
+    <string name="cadastro_profissao">Profissão</string>
+    <string name="cadastro_altura">Altura</string>
+    <string name="cadastro_data_nascimento">Data de Nascimento</string>
+    <string name="cadastro_sexo">Sexo</string>
+    <string name="cadastro_sexo_feminino">Feminino</string>
+    <string name="cadastro_sexo_masculino">Masculino</string>
+    <string name="cadastro_title_dados_autenticacao">Dados para Autenticação</string>
+    <string name="cadastro_title_dados_pessoais">Dados Pessoais</string>
+    <string name="cadastro_menu_label">Criar conta</string>
+    <string name="dashboard_imc">IMC</string>
+    <string name="dashboard_ncd">NCD</string>
+    <string name="dashboard_idade">Idade</string>
+    <string name="dashboard_peso">Peso</string>
+    <string name="dashboard_altura">Altura</string>
+    <string name="dashboard_nome">Megan Fox</string>
+    <string name="dashboard_profissao">Atriz</string>
+    <string name="dashboard_title_card_pesar">Pesar Agora</string>
+    <string name="dashboard_subtitle_card_pesar">Mantenha seu peso atualizado</string>
+    <string name="dashboard_title_card_historico">Histórico</string>
+    <string name="dashboard_subtitle_card_historico">Reveja suas conquistas</string>
+    <string name="login_title_app">HEALTH
+        CALC</string>
 
 </resources>

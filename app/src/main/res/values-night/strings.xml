@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cadastro_title_dados_autenticacao">Dados para Autenticação</string>
+    <string name="cadastro_title_dados_pessoais">Dados Pessoais</string>
+</resources>

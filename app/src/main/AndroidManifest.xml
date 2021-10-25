@@ -9,11 +9,13 @@
         android:roundIcon="@drawable/imc64"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImcApp">
-        <activity android:name=".NovoUsuarioActivity"></activity>
+        <activity android:name=".NovoUsuarioActivity"
+            android:label="@string/cadastro_menu_label"></activity>
         <activity android:name=".DashBoardActivity" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

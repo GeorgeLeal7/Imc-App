@@ -33,14 +33,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:textColor="@color/white"
-            android:text="Megan Fox"
+            android:text="@string/dashboard_nome"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:gravity="center_horizontal"
-            android:text="Atriz"
+            android:text="@string/dashboard_profissao"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
             android:layout_marginBottom="16dp"/>
         <LinearLayout
@@ -98,14 +98,14 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="IMC"
+                android:text="@string/dashboard_imc"
                 android:textAppearance="@style/dashboard_labels"/>
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="NCD"
+                android:text="@string/dashboard_ncd"
                 android:textColor="@color/white"
                 android:textAppearance="@style/dashboard_labels"/>
             <TextView
@@ -113,7 +113,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Idade"
+                android:text="@string/dashboard_idade"
                 android:textColor="@color/white"
                 android:textAppearance="@style/dashboard_labels"/>
             <TextView
@@ -121,7 +121,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Peso"
+                android:text="@string/dashboard_peso"
                 android:textColor="@color/white"
                 android:textAppearance="@style/dashboard_labels"/>
             <TextView
@@ -129,7 +129,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:text="Altura"
+                android:text="@string/dashboard_altura"
                 android:textColor="@color/white"
                 android:textAppearance="@style/dashboard_labels"/>
 
@@ -179,13 +179,13 @@
                         android:id="@+id/card_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pesar Agora"
+                        android:text="@string/dashboard_title_card_pesar"
                         android:textAppearance="@style/card_titulo"/>
                     <TextView
                         android:id="@+id/card_subtitle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Mantenha seu peso atualizado"/>
+                        android:text="@string/dashboard_subtitle_card_pesar"/>
 
                 </LinearLayout>
             </RelativeLayout>
@@ -226,13 +226,13 @@
                         android:id="@+id/card_title2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Histórico"
+                        android:text="@string/dashboard_title_card_historico"
                         android:textAppearance="@style/card_titulo"/>
                     <TextView
                         android:id="@+id/card_subtitle2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Reveja suas conquistas"/>
+                        android:text="@string/dashboard_subtitle_card_historico"/>
 
                 </LinearLayout>
             </RelativeLayout>

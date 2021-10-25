@@ -25,7 +25,7 @@
             android:layout_alignParentTop="true"
             android:fontFamily="@font/bowlby_one"
             android:gravity="end"
-            android:text="HEALTH\nCALC"
+            android:text="@string/login_title_app"
             android:textColor="@color/white"
             android:textSize="32sp" />
 
@@ -153,6 +153,7 @@
                     android:text="@string/login_nao_tem_conta"/>
 
                 <Button
+                    android:id="@+id/button_criar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/login_criar_conta"
