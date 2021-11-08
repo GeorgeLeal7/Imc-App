@@ -9,6 +9,7 @@ import android.view.MenuItem
 import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.RadioButton
+import android.widget.Toast
 import java.util.*
 
 class NovoUsuarioActivity : AppCompatActivity() {
@@ -33,7 +34,7 @@ class NovoUsuarioActivity : AppCompatActivity() {
 
         editNome = findViewById(R.id.edit_nome)
         editEmail = findViewById(R.id.edit_email)
-        editSenha = findViewById(R.id.edit_email)
+        editSenha = findViewById(R.id.edit_senha)
         editProfissao = findViewById(R.id.edit_profissao)
         editAltura = findViewById(R.id.edit_altura)
         editdata = findViewById(R.id.edit_data)
@@ -94,9 +95,26 @@ class NovoUsuarioActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-
         if(validarCampos()) {
-            //gravar os dados
+            //gravar os dados no SharedPreferences
+            // Criando um arquivo xml chamado "usuario"
+            // Se o arquivo ja existir ele só vai abrir
+            val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
+
+            val editor = arquivo.edit()
+
+            editor.putString("email", editEmail.text.toString())
+            editor.putString("senha", editSenha.text.toString())
+            editor.putString("nome", editNome.text.toString())
+            editor.putString("profissao", editProfissao.text.toString())
+            editor.putFloat("altura", editAltura.text.toString().toFloat())
+            editor.putString("nascimento", editdata.text.toString())
+            editor.putString("sexo", if(radioMasculino.isChecked) "M" else "F")
+            editor.apply()
+
+            Toast.makeText(this, "Usuário cadastrado com sucesso!!", Toast.LENGTH_SHORT).show()
+            finish()
+
         } else{
             //gravo nada
         }
@@ -118,8 +136,8 @@ class NovoUsuarioActivity : AppCompatActivity() {
             valido = false
         }
 
-        if (editProfissao.text.isEmpty()) {
-            editProfissao.error = "Profissão é obrigatório!"
+        if (editNome.text.isEmpty()) {
+            editNome.error = "Nome é obrigatório!"
             valido = false
         }
 
@@ -133,13 +151,8 @@ class NovoUsuarioActivity : AppCompatActivity() {
             valido = false
         }
 
-        if (radioFeminino.text.isEmpty()) {
+        if (!radioFeminino.isChecked && !radioMasculino.isChecked) {
             radioFeminino.error = "Seleção de sexo é obrigatório!"
-            valido = false
-        }
-
-        if (radioMasculino.text.isEmpty()) {
-            radioMasculino.error = "Seleção de sexo é obrigatório!"
             valido = false
         }
 
