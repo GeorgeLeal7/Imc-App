@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.imcapp.utils.calcularIdade
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val editSenha = findViewById<EditText>(R.id.edit_senha_login)
 
         buttonEntrar.setOnClickListener {
+
+            calcularIdade("07/01/2003")
 
             //Abrimos o arquivo
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
