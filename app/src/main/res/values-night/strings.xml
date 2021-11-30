@@ -2,4 +2,9 @@
 <resources>
     <string name="cadastro_title_dados_autenticacao">Dados para Autenticação</string>
     <string name="cadastro_title_dados_pessoais">Dados Pessoais</string>
+    <string name="novo_peso_dados_da_sua_pesagem">Dados da sua pesagem</string>
+    <string name="novo_peso_data_da_pesagem">Data da pesagem:</string>
+    <string name="novo_peso_nivel_de_atividade">Nível de atividade:</string>
+    <string name="seu_novo_peso">Seu novo peso:</string>
+    <string name="novo_peso_button_registrar">Registrar</string>
 </resources>

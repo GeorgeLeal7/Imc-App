@@ -35,6 +35,11 @@
         CALC</string>
     <string name="novopeso_vamos_nos_pesar">Vamos nos pesar?</string>
     <string name="novo_peso_subtitulo">Mantenha seu peso sempre atualizado, assim você poderá acompanhar sua evolução</string>
+    <string name="novo_peso_dados_da_sua_pesagem">Dados da sua pesagem</string>
+    <string name="novo_peso_data_da_pesagem">Data da pesagem:</string>
+    <string name="novo_peso_nivel_de_atividade">Nível de atividade:</string>
+    <string name="seu_novo_peso">Seu novo peso:</string>
+    <string name="novo_peso_button_registrar">Registrar</string>
     <string-array name="atividades">
         <item>Atividade Leve</item>
         <item>Atividade Moderada</item>

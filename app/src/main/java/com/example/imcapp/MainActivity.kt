@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonEntrar.setOnClickListener {
 
-            calcularIdade("07/01/2003")
+            //calcularIdade("07/01/2003")
 
             //Abrimos o arquivo
             val arquivo = getSharedPreferences("usuario", MODE_PRIVATE)
