@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NovoPeso2Activity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/novo_peso_card"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_card_novo_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/megan" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img_novo_peso"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_card"
+        app:srcCompat="@drawable/exercise1" />
+
+    <TextView
+        android:id="@+id/titulo_novo_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/novopeso_vamos_nos_pesar"
+        android:textAppearance="@style/novo_peso_titulo"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_novo_peso" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_novo_peso">
+
+        <ImageView
+            android:id="@+id/novo_peso_icon_error"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/error_24" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/novo_peso_icon_error"
+            android:text="@string/novo_peso_subtitulo" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:srcCompat="@drawable/accessibility_24" />
+
+    <TextView
+        android:id="@+id/novo_peso_titulo_dados_pesagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="17dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/novo_peso_dados_da_sua_pesagem"
+        android:textColor="@color/blue_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/icon_person"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/novo_peso_data_da_pesagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/novo_peso_data_da_pesagem"
+        android:textColor="@color/blue_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_titulo_dados_pesagem" />
+
+    <TextView
+        android:id="@+id/novo_peso_campo_data_pesagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="3dp"
+        android:text="07/01/2003"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_data_da_pesagem" />
+
+    <TextView
+        android:id="@+id/novo_peso_titulo_nivel_atividade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/novo_peso_nivel_de_atividade"
+        android:textColor="@color/blue_500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_campo_data_pesagem" />
+
+    <Spinner
+        android:id="@+id/novo_peso_campo_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="30dp"
+        android:entries="@array/atividades"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_titulo_nivel_atividade" />
+
+    <TextView
+        android:id="@+id/novo_peso_titulo_seu_novo_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/seu_novo_peso"
+        android:textColor="@color/blue_500"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_campo_array" />
+
+    <EditText
+        android:id="@+id/novo_peso_campo_novo_peso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_titulo_seu_novo_peso" />
+
+    <Button
+        android:id="@+id/novo_peso_button_registrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/novo_peso_button_registrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_peso_campo_novo_peso" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,7 +31,7 @@ class DashBoardActivity : AppCompatActivity() {
         buttonPesar = findViewById(R.id.button_pesar_agora)
 
         buttonPesar.setOnClickListener {
-            val abrirTelaPeso = Intent(this, NovoPesoActivity::class.java)
+            val abrirTelaPeso = Intent(this, NovoPeso2Activity::class.java)
             startActivity(abrirTelaPeso)
         }
     }
